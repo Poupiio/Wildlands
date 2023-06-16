@@ -1,0 +1,9 @@
+.navBar {
+    background-color: #fff;
+}
+
+.navLink {
+    color: peru;
+    text-transform: uppercase;
+    font-weight: bold;
+}
