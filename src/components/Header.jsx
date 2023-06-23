@@ -1,18 +1,29 @@
+import { Link } from 'react-router-dom';
 import styles from '../modules/Header.module.css';
 import logo from '../images/1.png';
 
 const Header = () => {
     return (
         <header>
-            <nav className={styles.navBar}>
-                <ul className={styles.navList}>
+            <div className={styles.logoContainer}>
+                <Link to='{/}'>
+                    <img src={logo} alt="Logo Wildlands" />
+                </Link>
+            </div>
+            <nav>
+                <ul>
                     <li>
-                        <img src={logo} alt="" className={styles.image} />
+                        <Link to='{/home}' className={styles.firstNavLink}>Accueil</Link>
                     </li>
-                    <li>Accueil</li>
-                    <li>Safaris</li>
-                    <li>Faune</li>
-                    <li>Connexion</li>
+                    <li>
+                        <Link to='{/}'>Safaris</Link>
+                    </li>
+                    <li>
+                        <Link to='{/}'>Faune</Link>
+                    </li>
+                    <li>
+                        <Link to='{/}'>Connexion</Link>
+                     </li>
                 </ul>
             </nav>
         </header>
