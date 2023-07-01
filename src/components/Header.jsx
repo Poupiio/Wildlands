@@ -13,15 +13,27 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
+                        <i className="fa-solid fa-house"></i>
                         <Link to='{/home}' className={styles.firstNavLink}>Accueil</Link>
                     </li>
                     <li>
+                        <i className="fa-solid fa-truck-pickup"></i>
                         <Link to='{/}'>Safaris</Link>
                     </li>
                     <li>
+                        <i className="fa-solid fa-paw"></i>
                         <Link to='{/}'>Faune</Link>
                     </li>
                     <li>
+                        <i className="fa-regular fa-images"></i>
+                        <Link to='{/}'>Galerie</Link>
+                    </li>
+                    <li>
+                        <i className="fa-solid fa-envelope"></i>
+                        <Link to='{/}'>Contact</Link>
+                    </li>
+                    <li>
+                        <i className="fa-solid fa-user"></i>
                         <Link to='{/}'>Connexion</Link>
                      </li>
                 </ul>
